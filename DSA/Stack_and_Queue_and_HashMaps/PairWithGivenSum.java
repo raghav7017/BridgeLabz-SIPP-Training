@@ -3,10 +3,8 @@ package Stack_and_Queue_and_HashMaps;
 import java.util.*;
 
 public class PairWithGivenSum {
-    private static Scanner sc;
-
-	public static void main(String[] args) {
-        sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter number of elements: ");
         int n = sc.nextInt();
