@@ -1,0 +1,14 @@
+class SurveyResponse
+    attribute restaurantName
+    attribute rating
+
+responses = list of SurveyResponse objects
+
+// Group ratings by restaurant
+groupedRatings = group responses by restaurantName
+
+for each restaurant in groupedRatings:
+    total = sum of ratings for restaurant
+    count = number of ratings for restaurant
+    average = total / count
+    print restaurant, average

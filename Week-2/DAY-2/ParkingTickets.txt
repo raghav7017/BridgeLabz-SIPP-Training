@@ -1,0 +1,28 @@
+class Vehicle
+    attribute vehicleNumber
+    attribute entryTime
+    method calculateFee(exitTime) // To be overridden
+
+class Car extends Vehicle
+    method calculateFee(exitTime)
+        hours = exitTime - entryTime
+        fee = 50 + 30 * max(0, ceil(hours-1))
+        return fee
+
+class Bike extends Vehicle
+    method calculateFee(exitTime)
+        hours = exitTime - entryTime
+        fee = 20 + 10 * max(0, ceil(hours-1))
+        return fee
+
+class Truck extends Vehicle
+    method calculateFee(exitTime)
+        hours = exitTime - entryTime
+        fee = 100 + 50 * max(0, ceil(hours-1))
+        return fee
+
+// On Entry
+create Vehicle object based on type and entry info
+
+// On Exit
+call object.calculateFee(exitTime) and print details
