@@ -1,0 +1,23 @@
+start
+class BusStopNode
+    attribute stopName
+    attribute next
+
+class BusRouteLinkedList
+    method insertStop(afterStop, newStop)
+        find afterStop
+        insert newStop node after it
+
+    method removeStop(stopName)
+        find stopName node
+        remove it from list
+
+    method searchStop(stopName)
+        traverse list; return true if found
+
+//Example operations
+initialize list with stops
+insert new stop after specific stop
+remove a stop due to closure
+search for a stop
+end

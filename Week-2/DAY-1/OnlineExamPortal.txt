@@ -1,0 +1,18 @@
+class User
+    attribute username
+    attribute password
+    method login()
+
+class Student extends User
+    method login()
+        if credentials valid and enrolled in course
+            grant exam access
+        else
+            deny access
+
+class Admin extends User
+    method login()
+        if credentials valid and admin privileges
+            grant management access
+        else
+            deny access

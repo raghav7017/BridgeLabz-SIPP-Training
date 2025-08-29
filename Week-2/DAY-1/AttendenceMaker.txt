@@ -1,0 +1,14 @@
+
+start
+initialize attendance[students][days]
+
+for each day:
+    for each student:
+        mark 'P' or 'A'
+
+method updateAttendance(student, day, value)
+    attendance[student][day] = value
+
+method monthlyReport(student)
+    count P for given student; return number of days present
+end

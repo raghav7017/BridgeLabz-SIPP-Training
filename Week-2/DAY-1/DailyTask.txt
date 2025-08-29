@@ -1,0 +1,13 @@
+start
+initialize tasks as LinkedHashMap
+
+method addTask(description)
+    auto-generate task ID
+    tasks[taskID] = description
+
+method removeTask(taskID)
+    delete tasks[taskID]
+
+method viewTasks()
+    display all tasks in insertion order
+end

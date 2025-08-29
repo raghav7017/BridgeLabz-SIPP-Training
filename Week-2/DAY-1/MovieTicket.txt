@@ -1,0 +1,20 @@
+class Ticket
+    attribute movieName
+    attribute seatNumber
+    attribute price
+    attribute bookingStatus
+
+class Theatre
+    attribute schedule
+    attribute availableSeats
+    method issueTicket(customer, movie, seat)
+        if seat available
+            create new ticket
+            mark seat as booked
+    method cancelTicket(ticket)
+        mark seat as available
+
+class Customer
+    method browseMovies()
+    method bookTicket(theatre, movie, seat)
+    method cancelTicket(ticket)
